@@ -6,9 +6,9 @@ Parse natural-language date strings into `datetime.date` objects.
 from datetime import date
 from nldate import parse
 
-parse("5 days before December 1st, 2025")                     # 2025-11-26
+parse("5 days before December 1st, 2025")  # 2025-11-26
 parse("1 year and 2 months after yesterday", date(2025, 11, 10))  # 2027-01-09
-parse("next Tuesday", date(2025, 11, 10))                     # 2025-11-11
+parse("next Tuesday", date(2025, 11, 10))  # 2025-11-11
 ```
 
 `parse(s, today=None)` uses `today` as the reference for relative expressions
